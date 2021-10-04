@@ -926,7 +926,8 @@ module.exports = syaa = async (syaa, mek) => {
       isAntihidetag &&
       m.message[m.mtype]?contextInfo?.mentionedJid?.length ==
         groupMembers.length
-    ) {
+    );
+	    {
       console.log(
         color("[ANTI-HIDETAG]", "red"),
         color(`@${sender.split("@")[0]} mengirim pesan hidetag`, "white")
